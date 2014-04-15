@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MultiWaveViewDemo")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("ynsoft")]
+[assembly: AssemblyCompany("Sin Corp.")]
 [assembly: AssemblyProduct("MultiWaveViewDemo")]
-[assembly: AssemblyCopyright("版权所有 (C) ynsoft 2014")]
+[assembly: AssemblyCopyright("版权所有 (C) Sin Corp. 2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
