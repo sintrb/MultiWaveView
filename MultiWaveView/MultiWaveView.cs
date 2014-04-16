@@ -11,7 +11,7 @@ namespace Sin.UI
 {
     public sealed partial class MultiWaveView : UserControl
     {
-        public static String VERSION = "1.0";
+        public static String VERSION = "1.1";
         private int[] xLocations = null;
         private int valIndex = 0;
         private long valueCount = 0;
@@ -592,6 +592,21 @@ namespace Sin.UI
             }
         }
 
+        private String _Format = "{0} {3:#0.00}/{2:#0.00}~{1:#0.00}";
+        [Category("外观"), Description("标题格式,{0}:名称 {1}:最大值 {2}:最小值 {3}:当前值"), DefaultValue(null)]
+        public String Format
+        {
+            get
+            {
+                return _Format;
+            }
+            set
+            {
+                _Format = value;
+            }
+        }
+
+
         public double[] Values = null;
         public double CurVal = 0;
 
@@ -602,7 +617,7 @@ namespace Sin.UI
         /// <returns>返回波形标题</returns>
         public String GetTitle()
         {
-            return String.Format("{0} {3}/{2}~{1}", Name, Max.ToString("#0.00"), Min.ToString("#0.00"), CurVal.ToString("#0.00"));
+            return String.Format(_Format, Name, Max, Min, CurVal);
         }
     }
 }
