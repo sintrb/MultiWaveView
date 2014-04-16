@@ -48,8 +48,18 @@ this.Controls.Add(mwv);
 
 =
 
+#### 部分使用截图
+* MultiWaveViewDemo运行截图
+> ![image](https://raw.githubusercontent.com/sintrb/MultiWaveView/master/MultiWaveViewDoc/screenshots/waves.png)
+
+* 上面提到的代码方式添加控件运行截图
+> ![image](https://raw.githubusercontent.com/sintrb/MultiWaveView/master/MultiWaveViewDoc/screenshots/codestyle.png)
+
+
+=
+
 #### 版本更新说明
 
-##### 1.0
+##### v1.0 (2014-04-15)
 
 * 发布到GitHub上的第一个版本，已经有基本的功能，并在实际项目中得到使用
