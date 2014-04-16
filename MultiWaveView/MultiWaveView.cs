@@ -183,7 +183,7 @@ namespace Sin.UI
 
         private Pen _ValueLinePen = Pens.Red;
         [Category("外观"), Description("数值线颜色")]
-        public Color MouseLinePen
+        public Color ValueLineColor
         {
             get
             {
@@ -460,6 +460,24 @@ namespace Sin.UI
             {
                 _MouseLeftDown = false;
             }
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (_ShowValueLine)
+            {
+                if (_ValueLineIndex > 0 && keyData == Keys.Left)
+                {
+                    --_ValueLineIndex;
+                    Invalidate();
+                }
+                else if (_ValueLineIndex < (PointCount - 1) && keyData == Keys.Right)
+                {
+                    ++_ValueLineIndex;
+                    Invalidate();
+                }
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
     }
 
