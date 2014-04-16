@@ -11,7 +11,7 @@ namespace Sin.UI
 {
     public sealed partial class MultiWaveView : UserControl
     {
-        public static String VERSION = "1.1";
+        public static String VERSION = "1.2";
         private int[] xLocations = null;
         private int valIndex = 0;
         private long valueCount = 0;
