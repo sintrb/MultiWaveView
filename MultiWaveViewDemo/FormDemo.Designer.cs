@@ -50,7 +50,7 @@
             this.mwvWaves.GridColor = System.Drawing.Color.Green;
             this.mwvWaves.GridSize = ((uint)(20u));
             this.mwvWaves.Location = new System.Drawing.Point(0, 0);
-            this.mwvWaves.MouseLinePen = System.Drawing.Color.WhiteSmoke;
+            this.mwvWaves.ValueLineColor = System.Drawing.Color.WhiteSmoke;
             this.mwvWaves.Name = "mwvWaves";
             this.mwvWaves.PointCount = 1024;
             this.mwvWaves.Size = new System.Drawing.Size(795, 473);

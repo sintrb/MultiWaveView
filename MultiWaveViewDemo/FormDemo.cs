@@ -15,6 +15,8 @@ namespace MultiWaveViewDemo
         public FormDemo()
         {
             InitializeComponent();
+
+            this.Text = this.Text + "  MultiWaveView V" + Sin.UI.MultiWaveView.VERSION;
         }
 
         private void tmRefresh_Tick(object sender, EventArgs e)
